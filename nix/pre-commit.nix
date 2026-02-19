@@ -18,7 +18,7 @@ in
 pre-commit.run {
   src = pkgs.nix-gitignore.gitignoreSource [ ] ../.;
   hooks = {
-    nixfmt-rfc-style = {
+    nixfmt = {
       enable = true;
       excludes = globalExcludes;
     };
